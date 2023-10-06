@@ -5,26 +5,25 @@
 </head>
 <body style="margin:0;padding:0;background:#d3f2e3;">
 <script>
-const load = e => {
-  var _iframe$contentWindow;
-  const iframe = e.target;
-  const click_a = e => {
-    e.preventDefault();
-    const t = e.target.cloneNode(true);
-    t.style.display = "none";
-    document.body.appendChild(t);
-    t.click();
-    document.body.removeChild(t);
-  };
-  const i_doc = iframe.contentDocument || ((_iframe$contentWindow = iframe.contentWindow) === null || _iframe$contentWindow === void 0 ? void 0 : _iframe$contentWindow.document);
-  [...i_doc.querySelectorAll('a')].map(v => {v.target = '_top';});
-  i_doc.addEventListener("click", click_a);
-};
+// const load = e => {
+//   var _iframe$contentWindow;
+//   const iframe = e.target;
+//   const click_a = e => {
+//     e.preventDefault();
+//     const t = e.target.cloneNode(true);
+//     t.style.display = "none";
+//     document.body.appendChild(t);
+//     t.click();
+//     document.body.removeChild(t);
+//   };
+//   const i_doc = iframe.contentDocument || ((_iframe$contentWindow = iframe.contentWindow) === null || _iframe$contentWindow === void 0 ? void 0 : _iframe$contentWindow.document);
+//   [...i_doc.querySelectorAll('a')].map(v => {v.target = '_top';});
+//   i_doc.addEventListener("click", click_a);
+// };
 </script>
 <iframe src="https://mintcashzs76pwp2piqqvrxyl45qawgwh4wc2gqmnluf4my5lws5j3id.gar.link"
 sandbox="allow-forms allow-pointer-lock	allow-same-origin allow-scripts"
 style="border:0;position:absolute;top:0;right:0;left:0;bottom:0;width:100%;height:100%;"
-onload="load()"
 ></iframe>
 </body>
 </html>
